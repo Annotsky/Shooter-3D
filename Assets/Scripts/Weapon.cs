@@ -4,8 +4,8 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     //переделать HandleShoot под эвент
+    [SerializeField] private WeaponSO _weaponSo;
     [SerializeField] private Animator _animator;
-    [SerializeField] private int _damageAmount;
     [SerializeField] private ParticleSystem _shootParticle;
     [SerializeField] private GameObject _hitParticles;
     
@@ -39,7 +39,7 @@ public class Weapon : MonoBehaviour
             Instantiate(_hitParticles, hit.point, Quaternion.identity);
 
             EnemyHealth _enemyHealth = hit.collider.GetComponent<EnemyHealth>();
-            _enemyHealth?.TakeDamage(_damageAmount);
+            _enemyHealth?.TakeDamage(_weaponSo.Damage);
         }
     }
 }
