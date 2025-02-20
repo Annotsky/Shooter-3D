@@ -232,7 +232,7 @@
                     "name": "",
                     "id": "6709b93e-0322-42e7-a0ab-14a143ecd8f0",
                     "path": "<Mouse>/leftButton",
-                    "interactions": "",
+                    "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "",
                     "action": "Shoot",
