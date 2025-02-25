@@ -47,6 +47,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shootParticle: {fileID: 8664294576553512801}
+  _interactionLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &2954795320002279435
 GameObject:
   m_ObjectHideFlags: 0

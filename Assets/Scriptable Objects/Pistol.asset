@@ -17,3 +17,7 @@ MonoBehaviour:
   FireRate: 0.5
   HitParticles: {fileID: 4807255683996300649, guid: e005fa24d3d525643aca73afbbd8323a, type: 3}
   IsAutomatic: 0
+  CanZoom: 0
+  ZoomAmount: 30
+  ZoomRotationSpeed: 0.3
+  MagazineSize: 10
