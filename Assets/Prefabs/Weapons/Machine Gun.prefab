@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1751368667489490255}
   - component: {fileID: 2324142625433652187}
   - component: {fileID: 8293408230472369159}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Muzzle Flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4845,7 +4845,7 @@ GameObject:
   - component: {fileID: 5004601240466119524}
   - component: {fileID: 8276544938627912897}
   - component: {fileID: 6140876399208669195}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Heavy_machine_gun_01_Blue_Team
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4930,7 +4930,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2418058207607236622}
   - component: {fileID: 8018550082682316206}
-  m_Layer: 3
+  - component: {fileID: 1555670963254766999}
+  m_Layer: 7
   m_Name: Machine Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4970,6 +4971,59 @@ MonoBehaviour:
   _interactionLayers:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1555670963254766999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8098016334383071880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ImpulseDefinition:
+    m_ImpulseChannel: 1
+    m_ImpulseShape: 2
+    m_CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ImpulseDuration: 0.2
+    m_ImpulseType: 0
+    m_DissipationRate: 0.25
+    m_RawSignal: {fileID: 0}
+    m_AmplitudeGain: 1
+    m_FrequencyGain: 1
+    m_RepeatMode: 0
+    m_Randomize: 1
+    m_TimeEnvelope:
+      m_AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_AttackTime: 0
+      m_SustainTime: 0.2
+      m_DecayTime: 0.7
+      m_ScaleWithImpact: 1
+      m_HoldForever: 0
+    m_ImpactRadius: 100
+    m_DirectionMode: 0
+    m_DissipationMode: 2
+    m_DissipationDistance: 100
+    m_PropagationSpeed: 343
+  m_DefaultVelocity: {x: 0, y: 0.05, z: 0}
 --- !u!1 &8177775873424440497
 GameObject:
   m_ObjectHideFlags: 0
@@ -4979,7 +5033,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6431358477448922234}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -106,6 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd563ed4b537a3640b74bcbc9c6f3fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _robotExplosion: {fileID: 1697489014588965984, guid: 6d8e51c8226ff6841be1347b30e8f857, type: 3}
   _startingHealth: 100
 --- !u!1 &7986525255470981593
 GameObject:

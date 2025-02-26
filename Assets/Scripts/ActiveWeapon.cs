@@ -7,6 +7,7 @@ public class ActiveWeapon : MonoBehaviour
 {
     [SerializeField] private WeaponSO _startingWeaponSo;
     [SerializeField] private CinemachineVirtualCamera _playerFollowCamera;
+    [SerializeField] private Camera _weaponCamera;
     [SerializeField] private GameObject _zoomVignette;
     [SerializeField] private TMP_Text _ammoText;
 
@@ -106,6 +107,7 @@ public class ActiveWeapon : MonoBehaviour
     private void SetZoomState(float fov, bool isVignetteActive, float rotationSpeed)
     {
         _playerFollowCamera.m_Lens.FieldOfView = fov;
+        _weaponCamera.fieldOfView = fov;
         _zoomVignette.SetActive(isVignetteActive);
         _firstPersonController.ChangeRotationSpeed(rotationSpeed);
     }
