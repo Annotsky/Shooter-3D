@@ -64,7 +64,7 @@ public class ActiveWeapon : MonoBehaviour
             Destroy(_currentWeapon.gameObject);
         }
 
-        Weapon newWeapon = Instantiate(weaponSo.weaponPrefab, transform).GetComponent<Weapon>();
+        Weapon newWeapon = Instantiate(weaponSo.WeaponPrefab, transform).GetComponent<Weapon>();
         _currentWeapon = newWeapon;
         _currentWeaponSo = weaponSo;
         AdjustAmmo(_currentWeaponSo.MagazineSize);

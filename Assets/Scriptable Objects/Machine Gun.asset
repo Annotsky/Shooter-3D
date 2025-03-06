@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31fa36554d28d3a44afd72c44d5e5e9e, type: 3}
   m_Name: Machine Gun
   m_EditorClassIdentifier: 
-  weaponPrefab: {fileID: 8098016334383071880, guid: 5dd5fd0e810cfd14a95415cd064b0384, type: 3}
-  Damage: 20
-  FireRate: 0.2
-  HitParticles: {fileID: 4807255683996300649, guid: e005fa24d3d525643aca73afbbd8323a, type: 3}
-  IsAutomatic: 1
-  CanZoom: 0
-  ZoomAmount: 30
-  ZoomRotationSpeed: 0.3
-  MagazineSize: 30
+  _weaponPrefab: {fileID: 8098016334383071880, guid: 5dd5fd0e810cfd14a95415cd064b0384, type: 3}
+  _hitParticles: {fileID: 4807255683996300649, guid: e005fa24d3d525643aca73afbbd8323a, type: 3}
+  _damage: 20
+  _fireRate: 0.2
+  _isAutomatic: 1
+  _magazineSize: 12
+  _canZoom: 0
+  _zoomAmount: 30
+  _zoomRotationSpeed: 0.3
