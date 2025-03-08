@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _robotExplosion: {fileID: 1697489014588965984, guid: 6d8e51c8226ff6841be1347b30e8f857, type: 3}
-  _startingHealth: 500
+  _startingHealth: 250
 --- !u!114 &6897460094910432490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,7 +119,6 @@ MonoBehaviour:
   _robotPrefab: {fileID: 7705155301402312242, guid: 838c7d588cce8294bbec5a4846915584, type: 3}
   _spawnPoint: {fileID: 657875890312732088}
   _robotSpawnDelay: 5
-  _player: {fileID: 0}
 --- !u!1 &8341259073963484243
 GameObject:
   m_ObjectHideFlags: 0

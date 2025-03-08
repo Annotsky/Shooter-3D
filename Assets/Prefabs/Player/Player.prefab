@@ -283,7 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 159ba675b6c4a1b4399de06db9ee261d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startingWeaponSo: {fileID: 11400000, guid: b5915054124cfd44796b4e51b4a0d6f0, type: 2}
+  _startingWeaponData: {fileID: 11400000, guid: b5915054124cfd44796b4e51b4a0d6f0, type: 2}
   _playerFollowCamera: {fileID: 0}
   _weaponCamera: {fileID: 3758730715357350016}
   _zoomVignette: {fileID: 0}

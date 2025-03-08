@@ -1,11 +1,12 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class WeaponPickup : Pickup
 {
-    [SerializeField] private WeaponSO _weaponSo;
+    [FormerlySerializedAs("_weaponSo")] [SerializeField] private WeaponData weaponData;
 
     protected override void OnPickup(ActiveWeapon activeWeapon)
     {
-        activeWeapon.SwitchWeapon(_weaponSo);
+        activeWeapon.SwitchWeapon(weaponData);
     }
 }

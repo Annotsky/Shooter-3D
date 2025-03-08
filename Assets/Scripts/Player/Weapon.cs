@@ -15,7 +15,7 @@ public class Weapon : MonoBehaviour
         _camera = Camera.main;
     }
 
-    public void Shoot(WeaponSO _weaponSo)
+    public void Shoot(WeaponData weaponData)
     {
         _shootParticle.Play();
         _impulseSource.GenerateImpulse();
@@ -23,9 +23,9 @@ public class Weapon : MonoBehaviour
         if (Physics.Raycast(_camera.transform.position, _camera.transform.forward, out var hit,
                 Mathf.Infinity, _interactionLayers, QueryTriggerInteraction.Ignore))
         {
-            Instantiate(_weaponSo.HitParticles, hit.point, Quaternion.identity);
-            EnemyHealth _enemyHealth = hit.collider.GetComponent<EnemyHealth>();
-            _enemyHealth?.TakeDamage(_weaponSo.Damage);
+            Instantiate(weaponData.HitParticles, hit.point, Quaternion.identity);
+            EnemyHealth _enemyHealth = hit.collider.GetComponentInParent<EnemyHealth>();
+            _enemyHealth?.TakeDamage(weaponData.Damage);
         }
     }
 }
