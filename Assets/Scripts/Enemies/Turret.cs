@@ -8,9 +8,10 @@ public class Turret : MonoBehaviour
     [SerializeField] private Transform _playerTargetPoint;
     [SerializeField] private Transform _projectileSpawnPoint;
     [SerializeField] private float _fireRate = 2f;
+    [SerializeField] private int _damage = 50;
 
     private PlayerHealth _playerHealth;
-    
+
     private void Start()
     {
         _playerHealth = FindFirstObjectByType<PlayerHealth>();
@@ -19,7 +20,7 @@ public class Turret : MonoBehaviour
 
     private void Update()
     {
-        transform.LookAt(_playerTargetPoint.position);
+        transform.LookAt(_playerTargetPoint);
     }
 
     private IEnumerator Fire()
@@ -27,7 +28,11 @@ public class Turret : MonoBehaviour
         while (_playerHealth)
         {
             yield return new WaitForSeconds(_fireRate);
-            Instantiate(_projectilePrefab, _projectileSpawnPoint.position, _turretHead.rotation);
+            Projectile newProjectile = Instantiate(_projectilePrefab,
+                    _projectileSpawnPoint.position, _turretHead.rotation)
+                .GetComponent<Projectile>();
+            newProjectile.transform.LookAt(_playerTargetPoint);
+            newProjectile.Init(_damage);
         }
     }
 }
