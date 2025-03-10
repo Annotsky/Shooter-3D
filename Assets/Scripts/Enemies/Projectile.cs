@@ -3,6 +3,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     [SerializeField] private float _projectileSpeed = 30f;
+    [SerializeField] private GameObject _projectileHitEffect;
 
     private Rigidbody _projectileRigidbody;
 
@@ -27,7 +28,8 @@ public class Projectile : MonoBehaviour
     {
         PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
         playerHealth?.TakeDamage(_damage);
-        
+
+        Instantiate(_projectileHitEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }
