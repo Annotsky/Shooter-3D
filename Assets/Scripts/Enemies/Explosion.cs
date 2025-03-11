@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Explosion : MonoBehaviour
 {
-    [SerializeField] private float _radius = 1.5f;
-    [SerializeField] private int _damage = 3;
+    [SerializeField] private float _radius;
+    [SerializeField] private int _damage;
     
     private void Start()
     {

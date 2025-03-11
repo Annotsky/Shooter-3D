@@ -2,7 +2,6 @@ using Cinemachine;
 using StarterAssets;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class ActiveWeapon : MonoBehaviour
 {

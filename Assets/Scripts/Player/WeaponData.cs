@@ -7,14 +7,14 @@ public class WeaponData : ScriptableObject
     [SerializeField] private GameObject _weaponPrefab;
     [SerializeField] private GameObject _hitParticles;
     [Header("Stats")]
-    [SerializeField] private int _damage = 20;
-    [SerializeField] private float _fireRate = .5f;
-    [SerializeField] private int _magazineSize = 12;
+    [SerializeField] private int _damage;
+    [SerializeField] private float _fireRate;
+    [SerializeField] private int _magazineSize;
     [SerializeField] private bool _isAutomatic;
     [Header("Zoom")]
     [SerializeField] private bool _canZoom;
-    [SerializeField] private float _zoomAmount = 30f;
-    [SerializeField] private float _zoomRotationSpeed = 0.3f;
+    [SerializeField] private float _zoomAmount;
+    [SerializeField] private float _zoomRotationSpeed;
     
     public GameObject WeaponPrefab => _weaponPrefab;
     public GameObject HitParticles => _hitParticles;

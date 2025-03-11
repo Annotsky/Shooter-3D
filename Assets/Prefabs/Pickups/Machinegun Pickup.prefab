@@ -96,15 +96,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2582018028880306062, guid: cf6a7a6fc2da6294882f35738d440a7e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.477459
+      value: 5.8017054
       objectReference: {fileID: 0}
     - target: {fileID: 2582018028880306062, guid: cf6a7a6fc2da6294882f35738d440a7e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2582018028880306062, guid: cf6a7a6fc2da6294882f35738d440a7e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.902239
+      value: -1.8575416
       objectReference: {fileID: 0}
     - target: {fileID: 2582018028880306062, guid: cf6a7a6fc2da6294882f35738d440a7e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -112,15 +112,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2582018028880306062, guid: cf6a7a6fc2da6294882f35738d440a7e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2582018028880306062, guid: cf6a7a6fc2da6294882f35738d440a7e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2582018028880306062, guid: cf6a7a6fc2da6294882f35738d440a7e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2582018028880306062, guid: cf6a7a6fc2da6294882f35738d440a7e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -136,6 +136,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2675664399648914076, guid: cf6a7a6fc2da6294882f35738d440a7e, type: 3}
       propertyPath: _weaponSo
+      value: 
+      objectReference: {fileID: 11400000, guid: 9e602279980ff5448b21baa15d3533a8, type: 2}
+    - target: {fileID: 2675664399648914076, guid: cf6a7a6fc2da6294882f35738d440a7e, type: 3}
+      propertyPath: weaponData
       value: 
       objectReference: {fileID: 11400000, guid: 9e602279980ff5448b21baa15d3533a8, type: 2}
     m_RemovedComponents: []
