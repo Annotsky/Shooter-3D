@@ -2,9 +2,9 @@ using UnityEngine;
 
 public abstract class Pickup : MonoBehaviour
 {
-    [SerializeField] private float _rotationSpeed;
-    
     private const string PlayerString = "Player";
+
+    [SerializeField] private float _rotationSpeed;
 
     private void Update()
     {

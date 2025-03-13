@@ -6,9 +6,8 @@ public class Projectile : MonoBehaviour
     [SerializeField] private GameObject _projectileHitEffect;
 
     private Rigidbody _projectileRigidbody;
-
     private int _damage;
-    
+
     private void Awake()
     {
         _projectileRigidbody = GetComponent<Rigidbody>();

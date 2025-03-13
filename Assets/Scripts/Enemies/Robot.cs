@@ -4,11 +4,11 @@ using UnityEngine.AI;
 
 public class Robot : MonoBehaviour
 {
-    private FirstPersonController _player; 
+    private const string PlayerString = "Player";
+
+    private FirstPersonController _player;
     private NavMeshAgent _navMeshAgent;
     private EnemyHealth _enemyHealth;
-    
-    private const string PlayerString = "Player";
 
     private void Awake()
     {

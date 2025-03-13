@@ -8,7 +8,7 @@ public class SpawnGate : MonoBehaviour
     [SerializeField] private float _robotSpawnDelay;
 
     private PlayerHealth _player;
-    
+
     private void Start()
     {
         _player = FindFirstObjectByType<PlayerHealth>();

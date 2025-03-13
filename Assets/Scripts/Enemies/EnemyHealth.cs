@@ -5,10 +5,9 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private GameObject _robotExplosion;
     [SerializeField] private int _startingHealth;
 
+    private EnemyCounter _enemyCounter;
     private int _currentHealth;
 
-    private EnemyCounter _enemyCounter;
-    
     private void Awake()
     {
         _currentHealth = _startingHealth;

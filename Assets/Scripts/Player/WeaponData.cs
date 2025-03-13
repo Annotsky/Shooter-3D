@@ -6,11 +6,13 @@ public class WeaponData : ScriptableObject
     [Header("Prefabs")]
     [SerializeField] private GameObject _weaponPrefab;
     [SerializeField] private GameObject _hitParticles;
+    
     [Header("Stats")]
     [SerializeField] private int _damage;
     [SerializeField] private float _fireRate;
     [SerializeField] private int _magazineSize;
     [SerializeField] private bool _isAutomatic;
+    
     [Header("Zoom")]
     [SerializeField] private bool _canZoom;
     [SerializeField] private float _zoomAmount;

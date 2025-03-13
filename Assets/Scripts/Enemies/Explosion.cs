@@ -4,7 +4,7 @@ public class Explosion : MonoBehaviour
 {
     [SerializeField] private float _radius;
     [SerializeField] private int _damage;
-    
+
     private void Start()
     {
         Explode();

@@ -4,7 +4,9 @@ using TMPro;
 using UnityEngine;
 
 public class ActiveWeapon : MonoBehaviour
-{
+{ //можно разбить на несколько классов, слишком много ответственности
+    private const string ShootString = "Shoot";
+
     [SerializeField] private WeaponData _startingWeaponData;
     [SerializeField] private CinemachineVirtualCamera _playerFollowCamera;
     [SerializeField] private Camera _weaponCamera;
@@ -21,8 +23,6 @@ public class ActiveWeapon : MonoBehaviour
     private float _defaultFOV;
     private float _defaultRotationSpeed;
     private int _currentAmmo;
-
-    private const string ShootString = "Shoot";
 
     private void Awake()
     {
